@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Image Compressor – Free & Secure</title>
+  <meta name="description" content="Compress images online securely without uploading. Fast, free and high quality image compression." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Background -->
+<div class="bg-gradient"></div>
+
+<header class="hero">
+  <h1>Image Compressor</h1>
+  <p>Compress images instantly. No upload. No quality loss.</p>
+</header>
+
+<!-- Top Ad -->
+<div class="ad ad-top">Advertisement</div>
+
+<main class="container">
+
+  <section class="glass-card">
+
+    <label class="upload-area">
+      <input type="file" id="upload" accept="image/*" hidden>
+      <span>Upload your image</span>
+      <small>PNG • JPG • WebP</small>
+    </label>
+
+    <div class="control">
+      <label>Compression Level</label>
+      <div class="range-wrap">
+        <input type="range" id="quality" min="10" max="100" value="70">
+        <span><strong id="qualityValue">70</strong>%</span>
+      </div>
+    </div>
+
+    <button class="cta" onclick="compressImage()">Compress Image</button>
+
+    <div class="result-grid">
+      <div class="result-card">
+        <h3>Original</h3>
+        <img id="originalPreview">
+        <p id="originalSize"></p>
+      </div>
+
+      <div class="result-card highlight">
+        <h3>Compressed</h3>
+        <img id="compressedPreview">
+        <p id="compressedSize"></p>
+        <a id="downloadBtn" class="download" download="compressed.jpg">Download</a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- In-content Ad -->
+  <div class="ad ad-content">Advertisement</div>
+
+  <section class="features glass-card">
+    <h2>Why people love this tool</h2>
+    <div class="feature-grid">
+      <div>100% Client Side</div>
+      <div>No Image Upload</div>
+      <div>Fast & Secure</div>
+      <div>Unlimited Use</div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2025 Image Compressor • Privacy Friendly</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
